@@ -1,0 +1,5 @@
+Created-By: Kirill Volychev
+Name: BankingSystem for NOU
+Manifest-Version: 1.0
+Main-Class: ru.nou.Main
+
