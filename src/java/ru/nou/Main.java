@@ -23,7 +23,7 @@ public class Main {
         FileReader reader = new FileReader(".\\resources\\config.json"); // считывание json файла
         config = (JSONObject) jsonParser.parse(reader); // парсинг json конфига
 
-        Connection connection = Sql.connect((String) config.get("databaseName")); // подключение в БД
+        Connection connection = Sql.connect((String) config.get("databaseName")); // подключение к БД
         session = new Session(connection); // создание экземпляра класса сессии
         UserMenu.main(); // вывод главного меню (запуск всего)
     }
